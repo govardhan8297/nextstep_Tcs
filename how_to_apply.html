@@ -167,6 +167,31 @@
           font-size: 12px;
           
       }
+      .your{
+        font-size: 13px;
+                font-family: robotoRegular, Open Sans, Segoe UI, Sans-Serif;
+                font-weight: bold;
+                color: maroon;
+      }
+      .welcome{
+        font-size: 13px;
+                font-family: robotoRegular, Open Sans, Segoe UI, Sans-Serif;
+                font-weight: bold;
+                color: grey;
+                padding-left: 45px;
+      }
+      .first-name{
+        font-size: 13px;
+                font-family: robotoRegular, Open Sans, Segoe UI, Sans-Serif;
+                font-weight: bold;
+                color: maroon;
+      }
+      .dt-no{
+        font-size: 13px;
+                font-family: robotoRegular, Open Sans, Segoe UI, Sans-Serif;
+                font-weight: bold;
+                color: maroon;
+      }
     
       .responsive {
         display: none;
@@ -261,31 +286,43 @@
       }
       @media screen and (min-width: 1000px) and (max-width: 1099px) {
         .list {
-          transform: translateX(38px);
+          transform: translateX(85px);
+        }
+        .list ul li{
+            font-size: 10px;
         }
         .para p:nth-child(1) {
           font-size: 11px;
         }
-        nav{
-            width: 95.5%;
-        }
+        
         aside {
           width: 25%;
         }
-        aside ul li {
-          font-size: 12px;
+        .greeting{
+            font-size: 10px;
         }
-      }
-      @media screen and (min-width: 953px) and (max-width: 999px) {
-        .list {
-          transform: translateX(20px);
+        .pre-req{
+            font-size: 12px;
         }
-        .para p:nth-child(1) {
-          font-size: 11px;
+        .para span:nth-child(5){
+            font-size: 9px;
         }
-        aside {
-          width: 25%;
+        .instructions{
+            font-size: 12px;
         }
+        .apply{
+            font-size: 11px;
+        }
+        .para ol li,.para ol li ul li{
+            font-size: 10px;
+        }
+        .campus{
+            font-size: 10px;
+        }
+        .step-1{
+            font-size: 9px;
+        }
+
         .para {
             width: 95%;
         }
@@ -293,7 +330,56 @@
             width: 95.5%;
         }
         aside ul li {
-          font-size: 12px;
+          font-size: 10px;
+        }
+      }
+      @media screen and (min-width: 953px) and (max-width: 999px) {
+        .list {
+          transform: translateX(70px);
+        }
+        .list ul li{
+            font-size: 10px;
+        }
+        .para p:nth-child(1) {
+          font-size: 11px;
+        }
+        
+        aside {
+          width: 25%;
+        }
+        .greeting{
+            font-size: 10px;
+        }
+        .pre-req{
+            font-size: 12px;
+        }
+        .para span:nth-child(5){
+            font-size: 9px;
+        }
+        .instructions{
+            font-size: 12px;
+        }
+        .apply{
+            font-size: 11px;
+        }
+        .para ol li,.para ol li ul li{
+            font-size: 10px;
+        }
+        .campus{
+            font-size: 10px;
+        }
+        .step-1{
+            font-size: 9px;
+        }
+
+        .para {
+            width: 95%;
+        }
+        nav{
+            width: 95.5%;
+        }
+        aside ul li {
+          font-size: 10px;
         }
       }
 
@@ -352,43 +438,14 @@
           </ul>
         </aside>
         <div class="container-1">
-          <section>
-            <span
-              style="
-                font-size: 13px;
-                font-family: robotoRegular, Open Sans, Segoe UI, Sans-Serif;
-                font-weight: bold;
-                color: grey;
-                padding-left: 45px;
-              "
-              >WELCOME</span
+          <section >
+            <span class="greeting welcome">WELCOME</span
             >
-            <span
-              style="
-                font-size: 13px;
-                font-family: robotoRegular, Open Sans, Segoe UI, Sans-Serif;
-                font-weight: bold;
-                color: maroon;
-              "
-              >YOUR</span
+            <span class="greeting your">YOUR</span
             >
-            <span
-              style="
-                font-size: 13px;
-                font-family: robotoRegular, Open Sans, Segoe UI, Sans-Serif;
-                font-weight: bold;
-                color: maroon;
-              "
-              >NAME</span
+            <span class="greeting first-name">NAME</span
             >
-            <span
-              style="
-                font-size: 13px;
-                font-family: robotoRegular, Open Sans, Segoe UI, Sans-Serif;
-                font-weight: bold;
-                color: maroon;
-              "
-            >
+            <span class="greeting dt-no">
               (DT20207123456)</span
             >
           </section>
