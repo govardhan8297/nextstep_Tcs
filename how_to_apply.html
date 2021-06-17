@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/61c3e49273.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Nextstep- Tata Consutancy Services</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: robotoRegular, Open Sans, Segoe UI, Sans-Serif;
+        background: url("HomePageWaterMark.jpg");
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+      }
+      .container {
+        width: 60%;
+        padding: 0;
+        margin: auto;
+        background-color: white;
+        margin-top: -5px;
+      }
+      main {
+        display: flex;
+        width: 100%;
+      }
+
+      aside {
+        width: 25%;
+        height: 100%;
+        /* max-height: fit-content; */
+        background-color: #548ad4;
+        margin-top: 10px;
+      }
+      .container-1 {
+        width: 75%;
+      }
+
+      aside ul li {
+        list-style: none;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 15px;
+        font-size: 12px;
+        font-weight: 700;
+        font-family: robotoRegular, Open Sans, Segoe UI, Sans-Serif;
+        border-bottom: 1px solid white;
+        cursor: pointer;
+      }
+      aside ul li a {
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+      }
+      aside ul li:hover {
+        background-color: rgb(231, 196, 83);
+      }
+      section h4 {
+        padding-left: 50px;
+        font-size: 15px;
+      }
+      nav {
+        display: inline-flex;
+        width: 97%;
+        margin-left: 20px;
+        margin-top: 10px;
+        float: inline-end;
+        background-color: black;
+      }
+      nav ul {
+        display: flex;
+      }
+      .list {
+        transform: translateX(410px);
+      }
+      nav ul li {
+        padding: 8px;
+        color: white;
+        list-style: none;
+        cursor: pointer;
+        font-size: 12px;
+      }
+      .fa-phone {
+        transform: rotate(80deg);
+      }
+
+      img[src="nextstep_banner2.png"] {
+        width: 96%;
+        margin-left: 25px;
+      }
+      .para {
+        margin-top: 5px;
+        width: 100%;
+        height: 477px;
+        margin-left: 20px;
+        padding: 10px;
+        overflow-y: auto;
+      }
+      .para p:nth-child(1) {
+        color: #428bca;
+        font-weight: 700;
+        margin-bottom: 15px;
+      }
+      .footer {
+        width: 52%;
+        margin: auto;
+        margin-top: 25px;
+        transform: translateX(17px);
+        padding-top: 30px;
+        border-top: 1px solid rgb(100, 100, 100);
+        font-size: 11px;
+        color: rgb(156, 156, 156);
+      }
+      .footer a {
+        text-decoration: none;
+      }
+      .pre-req {
+        font-size: 15px;
+        font-weight: 700;
+        margin-left: 15px;
+      }
+      .para span:nth-child(5) {
+        font-size: 12px;
+      }
+      .instructions{
+          font-size: 15px;
+          font-weight: 610;
+          margin-left: 15px;
+          margin-bottom: 20px;
+      }
+      .apply{
+        font-size: 13px;
+          font-weight: 700;
+          margin-left: 15px;
+      }
+      .para ol{
+          margin-left: 35px;
+          margin-top: 15px;
+      }
+      .para ol li{
+          padding: 10px;
+          font-size: 12px;
+      }
+      .para ol li ul li{
+          margin-top: 10px;
+          margin-left: 35px;
+        list-style-type:disc;
+
+      }
+      .campus{
+          margin-top: 25px;
+          margin-bottom: 25px;
+          font-size: 13px;
+          font-weight: 700;
+           color: black;
+      }
+      .step-1{
+          font-size: 12px;
+          
+      }
+    
+      .responsive {
+        display: none;
+      }
+      @media screen and (min-width: 1352px) {
+        header img {
+          width: 100%;
+        }
+      }
+      @media screen and (min-width: 1700px) and (max-width: 1800px) {
+        .list {
+          transform: translateX(360px);
+        }
+      }
+      @media screen and (min-width: 1600px) and (max-width: 1699px) {
+        .list {
+          transform: translateX(330px);
+        }
+      }
+      @media screen and (min-width: 1500px) and (max-width: 1599px) {
+        .list {
+          transform: translateX(300px);
+        }
+      }
+      @media screen and (min-width: 1400px) and (max-width: 1499px) {
+        .list {
+          transform: translateX(270px);
+        }
+      }
+
+      @media screen and (max-width: 1399px) {
+        .container {
+          display: none;
+        }
+        body {
+          background-image: -webkit-gradient(
+            linear,
+            50% 0%,
+            50% 100%,
+            color-stop(0%, #4d7a13),
+            color-stop(100%, #6aa025)
+          );
+        }
+        .responsive {
+          display: block;
+          text-align: center;
+          justify-content: center;
+          align-items: center;
+          color: white;
+        }
+        .footer {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img src="nextstep_banner.png" alt="nextstep" />
+      </header>
+      <main>
+        <aside>
+          <ul>
+            <li><a href="#">Application Form PDF</a></li>
+            <li onclick="window.location='offer_letter.html'">
+              <a>Offer Letter</a>
+            </li>
+            <li onclick="window.location='campus_commune.html'">
+              <a>Campus Commune</a>
+            </li>
+            <li onclick="window.location='track_application.html'">
+              <a>Track My Application</a>
+            </li>
+            <li class="li">
+              <a href="#">ILP Corner</a>
+            </li>
+            <li><a href="#">Background Check</a></li>
+            <li><a href="#">Certification Details</a></li>
+
+            <li onclick="window.location='how_to_apply.html'"><a>How To Apply</a></li>
+            <li><a href="#">On Boarding</a></li>
+          </ul>
+        </aside>
+        <div class="container-1">
+          <section>
+            <span
+              style="
+                font-size: 13px;
+                font-family: robotoRegular, Open Sans, Segoe UI, Sans-Serif;
+                font-weight: bold;
+                color: grey;
+                padding-left: 45px;
+              "
+              >WELCOME</span
+            >
+            <span
+              style="
+                font-size: 13px;
+                font-family: robotoRegular, Open Sans, Segoe UI, Sans-Serif;
+                font-weight: bold;
+                color: maroon;
+              "
+              >YOUR</span
+            >
+            <span
+              style="
+                font-size: 13px;
+                font-family: robotoRegular, Open Sans, Segoe UI, Sans-Serif;
+                font-weight: bold;
+                color: maroon;
+              "
+              >NAME</span
+            >
+            <span
+              style="
+                font-size: 13px;
+                font-family: robotoRegular, Open Sans, Segoe UI, Sans-Serif;
+                font-weight: bold;
+                color: maroon;
+              "
+            >
+              (DT20207123456)</span
+            >
+          </section>
+          <nav>
+            <div class="list">
+              <ul>
+                <li><i class="fa fa-home" aria-hidden="true"></i> Home</li>
+                <li><i class="fa fa-file" aria-hidden="true"></i> FAQ</li>
+                <li>
+                  <i class="fa fa-lock" aria-hidden="true"></i> Change Password
+                </li>
+                <li>
+                  <i class="fa fa-phone" aria-hidden="true"></i> Contact Us
+                </li>
+                <li>
+                  <i class="fa fa-sign-out" aria-hidden="true"></i> Logout
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <section class="portal"></section>
+          <section class="para">
+            <p>Application Process For New Candidate</p>
+            <span class="pre-req">Pre-requisites</span>
+            <br /><br />
+            <span
+              >The Registration and Application form requires information about
+              personal details, academic scores, employment (if applicable),
+              passport (if applicable) academic projects undertaken. Please
+              ensure you have the information available with you before you
+              start filling up the form. TCS can ask for documentary proof to
+              validate the information provided in the form.</span
+            ><br /></br>
+            <span class="instructions"
+              >Instructions for the Application Process</span
+            ><br><br>
+            <span class="apply">To apply on TCS NextStep portal:</span>
+            <ol>
+                <li>Click New Candidate to begin. The following tabs are displayed:
+                </li>
+                <li>Select the relevant tab to proceed further.
+                    <ul><li>
+                        Campus Applicants
+
+                    </li>
+                <li>Off Campus Applicants
+                </li></ul>
+                </li>
+                <li>To initiate the TCS selection process, register on-line on the portal and fill the Application form.<br>
+                    <b>Note:</b>Please ensure that the information provided here is true and to the best of your knowledge. The information in the form serves as a permanent record for TCS. Any misinterpretation intentionally or otherwise, will debar you from the selection process.
+
+                </li>
+                <li>Upload your recent digital passport size photograph in the Application form (.jpg, .jpeg format).<br>
+                    <b>Note:</b>The maximum size allowed is 500 KB.
+                </li>
+                <li>Upload your updated resume in the supported format (.doc/.docx/.rtf/.txt).<br>
+                   <b> Note:</b>The maximum size allowed is 500 KB.
+
+                </li>
+                <li>Submit the Application form.
+                </li>
+                <li>Download the Application form in PDF format after you submit the form successfully. The PDF form contains a CT/DT Reference number.
+                </li>
+            </ol>
+            <p class="campus">Campus Applicants</p>
+            <span class="step-1">Please take print out of the application form PDF in A4 size paper. You will need to carry the hard copy of the form along with your resume for appearing in the TCS selection process. Please ensure that you print all pages of the application form.
+            </span>
+            <p class="campus">Direct Applicants</p>
+            <span class="step-1">Please take print out of the application form PDF in A4 size paper. Once you are batched for the TCS Selection Process, you can download the hall ticket from the NextStep Portal. You will need to carry the hard copy of the Application Form along with your resume and Hall Ticket for appearing in the TCS selection process. Please ensure that you print all pages of the application form.
+            </span><br><br>
+            <span class="step-1">All the best !
+            </span>
+          </section>
+        </div>
+      </main>
+    </div>
+    <div class="footer">
+      <p>
+        2021 Tata Consultancy Services Limited. All rights reserved | Build
+        Number : | <a href="#">Privacy Notice</a> | <a href="#">Disclaimer</a> |
+        <a href="#">Terms Of Use</a>
+        <br />
+        We use cookies to give you the best possible experience on our
+        website.To find out more, read our updated <a href="#">Cookie Policy</a>
+      </p>
+    </div>
+    <div class="responsive">
+      <img src="responsive_banner.png" alt="image" />
+      <br />
+      <span>The page you are viewing is not compatible to mobile.</span>
+      <br /><br />
+      <span>
+        To access the page, please select the 'Desktop Site' in the browser menu
+      </span>
+      <br /><br />
+      <span>or use a desktop/Laptop.</span>
+    </div>
+  </body>
+</html>
