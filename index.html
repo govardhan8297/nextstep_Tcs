@@ -117,6 +117,32 @@
       .footer a {
         text-decoration: none;
       }
+
+      .your {
+        font-size: 13px;
+        font-family: robotoRegular, Open Sans, Segoe UI, Sans-Serif;
+        font-weight: bold;
+        color: maroon;
+      }
+      .welcome {
+        font-size: 13px;
+        font-family: robotoRegular, Open Sans, Segoe UI, Sans-Serif;
+        font-weight: bold;
+        color: grey;
+        padding-left: 45px;
+      }
+      .first-name {
+        font-size: 13px;
+        font-family: robotoRegular, Open Sans, Segoe UI, Sans-Serif;
+        font-weight: bold;
+        color: maroon;
+      }
+      .dt-no {
+        font-size: 13px;
+        font-family: robotoRegular, Open Sans, Segoe UI, Sans-Serif;
+        font-weight: bold;
+        color: maroon;
+      }
       .responsive {
         display: none;
       }
@@ -183,13 +209,26 @@
       }
       @media screen and (min-width: 1000px) and (max-width: 1099px) {
         .list {
-          transform: translateX(70px);
+          transform: translateX(200px);
         }
         .para p:nth-child(1) {
-          font-size: 11px;
+          font-size: 8px;
         }
+        .container {
+          width: 80%;
+        }
+        .portal p {
+          font-size: 12px;
+        }
+        .greeting {
+          font-size: 10px;
+        }
+        .list ul li {
+          font-size: 10px;
+        }
+
         aside {
-          width: 70%;
+          width: 60%;
         }
         aside ul li {
           font-size: 11px;
@@ -197,13 +236,22 @@
       }
       @media screen and (min-width: 953px) and (max-width: 999px) {
         .list {
-          transform: translateX(190px);
+          transform: translateX(180px);
         }
         .para p:nth-child(1) {
-          font-size: 11px;
+          font-size: 8px;
         }
         .container {
           width: 80%;
+        }
+        .portal p {
+          font-size: 12px;
+        }
+        .greeting {
+          font-size: 10px;
+        }
+        .list ul li {
+          font-size: 10px;
         }
 
         aside {
@@ -272,44 +320,10 @@
         </aside>
         <div class="container-1">
           <section>
-            <span
-              style="
-                font-size: 13px;
-                font-family: robotoRegular, Open Sans, Segoe UI, Sans-Serif;
-                font-weight: bold;
-                color: grey;
-                padding-left: 45px;
-              "
-              >WELCOME</span
-            >
-            <span
-              style="
-                font-size: 13px;
-                font-family: robotoRegular, Open Sans, Segoe UI, Sans-Serif;
-                font-weight: bold;
-                color: maroon;
-              "
-              >YOUR</span
-            >
-            <span
-              style="
-                font-size: 13px;
-                font-family: robotoRegular, Open Sans, Segoe UI, Sans-Serif;
-                font-weight: bold;
-                color: maroon;
-              "
-              >NAME</span
-            >
-            <span
-              style="
-                font-size: 13px;
-                font-family: robotoRegular, Open Sans, Segoe UI, Sans-Serif;
-                font-weight: bold;
-                color: maroon;
-              "
-            >
-              (DT20207123456)</span
-            >
+            <span class="greeting welcome">WELCOME</span>
+            <span class="greeting your">YOUR</span>
+            <span class="greeting first-name">NAME</span>
+            <span class="greeting dt-no"> (DT20207123456)</span>
           </section>
           <nav>
             <div class="list">
