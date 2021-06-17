@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/61c3e49273.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Nextstep- Tata Consutancy Services</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: robotoRegular, Open Sans, Segoe UI, Sans-Serif;
+        background: url("HomePageWaterMark.jpg");
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+      }
+      .container {
+        width: 60%;
+        padding: 0;
+        margin: auto;
+        background-color: white;
+        margin-top: -5px;
+      }
+      main {
+        display: flex;
+      }
+      aside {
+        width: 25%;
+        height: 100%;
+        /* max-height: fit-content; */
+        background-color: #548ad4;
+        margin-top: 10px;
+      }
+
+      aside ul li {
+        list-style: none;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 15px;
+        font-size: 12px;
+        font-weight: 700;
+        font-family: robotoRegular, Open Sans, Segoe UI, Sans-Serif;
+        border-bottom: 1px solid white;
+        cursor: pointer;
+      }
+      aside ul li a {
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+      }
+      aside ul li:hover {
+        background-color: rgb(231, 196, 83);
+      }
+      section h4 {
+        padding-left: 50px;
+        font-size: 15px;
+      }
+      nav {
+        display: inline-flex;
+        width: 97%;
+        margin-left: 20px;
+        margin-top: 10px;
+        float: inline-end;
+        background-color: black;
+      }
+      nav ul {
+        display: flex;
+      }
+      .list {
+        transform: translateX(410px);
+      }
+      nav ul li {
+        padding: 8px;
+        color: white;
+        list-style: none;
+        cursor: pointer;
+        font-size: 12px;
+      }
+      .fa-phone {
+        transform: rotate(80deg);
+      }
+      .portal {
+        width: 96%;
+        background-color: #548ad4;
+        margin-left: 25px;
+        padding: 10px;
+      }
+      .portal p {
+        color: white;
+      }
+      .portal1 {
+        margin-top: -5px;
+        width: 96%;
+        background-color: yellowgreen;
+        margin-left: 25px;
+        padding: 5px;
+      }
+      .portal1 p {
+        margin-left: 10px;
+        color: white;
+      }
+      img[src="nextstep_banner2.png"] {
+        width: 96%;
+        margin-left: 25px;
+      }
+      .para {
+        margin-top: 5px;
+        margin-left: 35px;
+        font-size: 13px;
+      }
+      .footer {
+        width: 52%;
+        margin: auto;
+        margin-top: 25px;
+        transform: translateX(17px);
+        padding-top: 30px;
+        border-top: 1px solid rgb(100, 100, 100);
+        font-size: 11px;
+        color: rgb(156, 156, 156);
+      }
+      .footer a {
+        text-decoration: none;
+      }
+      table {
+        width: 50%;
+        border: 1px solid lightgray;
+        margin-top: 20px;
+        text-align: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        border-collapse: collapse;
+      }
+      .table {
+        height: 352px;
+        width: 145%;
+        overflow-y: auto;
+        transform: translateX(-190px);
+        min-height: 1px;
+        padding-left: 25px;
+        padding-right: 25px;
+      }
+
+      table .head {
+        background: linear-gradient(to top, rgb(175, 206, 249), white);
+      }
+      table .head td {
+        font-size: 13px;
+        font-weight: bold;
+      }
+      table tr {
+        width: 174px;
+        display: table-row;
+        line-height: 30px;
+        vertical-align: inherit;
+        border-color: inherit;
+      }
+      table tbody {
+        display: table-row-group;
+        vertical-align: middle;
+        border-color: inherit;
+      }
+      table tr td {
+        display: table-cell;
+        font-size: 11px;
+        font-weight: 600;
+
+        padding: 5px;
+        border: 1px solid lightgray;
+      }
+      .responsive {
+        display: none;
+      }
+      @media screen and (min-width: 1352px) {
+        header img {
+          width: 100%;
+        }
+      }
+      @media screen and (min-width: 1700px) and (max-width: 1800px) {
+        .list {
+          transform: translateX(360px);
+        }
+      }
+      @media screen and (min-width: 1600px) and (max-width: 1699px) {
+        .list {
+          transform: translateX(330px);
+        }
+      }
+      @media screen and (min-width: 1500px) and (max-width: 1599px) {
+        .list {
+          transform: translateX(300px);
+        }
+      }
+      @media screen and (min-width: 1400px) and (max-width: 1499px) {
+        .list {
+          transform: translateX(270px);
+        }
+      }
+
+      @media screen and (max-width: 1399px) {
+        .container {
+          display: none;
+        }
+        body {
+          background-image: -webkit-gradient(
+            linear,
+            50% 0%,
+            50% 100%,
+            color-stop(0%, #4d7a13),
+            color-stop(100%, #6aa025)
+          );
+        }
+        .responsive {
+          display: block;
+          text-align: center;
+          justify-content: center;
+          align-items: center;
+          color: white;
+        }
+        .footer {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img src="nextstep_banner.png" alt="nextstep" />
+      </header>
+      <main>
+        <aside>
+          <ul>
+            <li><a href="#">Application Form PDF</a></li>
+            <li onclick="window.location='offer_letter.html'">
+              <a>Offer Letter</a>
+            </li>
+            <li onclick="window.location='campus_commune.html'">
+              <a>Campus Commune</a>
+            </li>
+            <li onclick="window.location='track_application.html'">
+              <a>Track My Application</a>
+            </li>
+            <li class="li">
+              <a href="#">ILP Corner</a>
+            </li>
+            <li><a href="#">Background Check</a></li>
+            <li><a href="#">Certification Details</a></li>
+
+            <li><a href="#">How To Apply</a></li>
+            <li><a href="#">On Boarding</a></li>
+          </ul>
+        </aside>
+        <div class="container-1">
+          <section>
+            <span
+              style="
+                font-size: 13px;
+                font-family: robotoRegular, Open Sans, Segoe UI, Sans-Serif;
+                font-weight: bold;
+                color: grey;
+                padding-left: 45px;
+              "
+              >WELCOME</span
+            >
+            <span
+              style="
+                font-size: 13px;
+                font-family: robotoRegular, Open Sans, Segoe UI, Sans-Serif;
+                font-weight: bold;
+                color: maroon;
+              "
+              >YOUR</span
+            >
+            <span
+              style="
+                font-size: 13px;
+                font-family: robotoRegular, Open Sans, Segoe UI, Sans-Serif;
+                font-weight: bold;
+                color: maroon;
+              "
+              >NAME</span
+            >
+            <span
+              style="
+                font-size: 13px;
+                font-family: robotoRegular, Open Sans, Segoe UI, Sans-Serif;
+                font-weight: bold;
+                color: maroon;
+              "
+            >
+              (DT20207123456)</span
+            >
+          </section>
+          <nav>
+            <div class="list">
+              <ul>
+                <li><i class="fa fa-home" aria-hidden="true"></i> Home</li>
+                <li><i class="fa fa-file" aria-hidden="true"></i> FAQ</li>
+                <li>
+                  <i class="fa fa-lock" aria-hidden="true"></i> Change Password
+                </li>
+                <li>
+                  <i class="fa fa-phone" aria-hidden="true"></i> Contact Us
+                </li>
+                <li>
+                  <i class="fa fa-sign-out" aria-hidden="true"></i> Logout
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <section class="portal">
+            <p>TCS NextStep Portal</p>
+          </section>
+          <img src="nextstep_banner2.png" alt="image" />
+          <section class="portal1">
+            <p>TCS Application Status</p>
+          </section>
+          <div class="table">
+            <table>
+              <tbody>
+                <tr class="head">
+                  <td>Activity</td>
+                  <td>Status</td>
+                  <td>Date (DD/MM/YYYY)</td>
+                </tr>
+                <tr>
+                  <td>Joining Letter Accepted</td>
+                  <td>Joining Letter Accepted</td>
+                  <td>14/05/2021 10:36</td>
+                </tr>
+                <tr>
+                  <td>Joining Letter Generated</td>
+                  <td>Joining Letter Generated</td>
+                  <td>13/05/2021 18:00</td>
+                </tr>
+                <tr>
+                  <td>ILP Scheduled</td>
+                  <td>ILP Scheduled</td>
+                  <td>13/05/2021 17:21</td>
+                </tr>
+                <tr>
+                  <td>ILP Eligible</td>
+                  <td>ILP Eligible</td>
+                  <td>02/04/2021 11:00</td>
+                </tr>
+                <tr>
+                  <td>Offer Accepted</td>
+                  <td>Offer Accepted</td>
+                  <td>30/03/2021 16:41</td>
+                </tr>
+                <tr>
+                  <td>Offer Letter</td>
+                  <td>Offer Letter Generated</td>
+                  <td>30/03/2021 13:55</td>
+                </tr>
+                <tr>
+                  <td>Candidate Batched</td>
+                  <td>Batched</td>
+                  <td>17/03/2021 19:23</td>
+                </tr>
+                <tr>
+                  <td>Applied for Drive</td>
+                  <td>Applied for Drive</td>
+                  <td>17/02/2021 09:41</td>
+                </tr>
+                <tr>
+                  <td>Application Received</td>
+                  <td>Application Received</td>
+                  <td>11/09/2020 08:22</td>
+                </tr>
+                <tr>
+                  <td>Candidate Registration</td>
+                  <td>Registered</td>
+                  <td>11/09/2020 07:35</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </main>
+    </div>
+    <div class="footer">
+      <p>
+        2021 Tata Consultancy Services Limited. All rights reserved | Build
+        Number : | <a href="#">Privacy Notice</a> | <a href="#">Disclaimer</a> |
+        <a href="#">Terms Of Use</a>
+        <br />
+        We use cookies to give you the best possible experience on our
+        website.To find out more, read our updated <a href="#">Cookie Policy</a>
+      </p>
+    </div>
+    <div class="responsive">
+      <img src="responsive_banner.png" alt="image" />
+      <br />
+      <span>The page you are viewing is not compatible to mobile.</span>
+      <br /><br />
+      <span>
+        To access the page, please select the 'Desktop Site' in the browser menu
+      </span>
+      <br /><br />
+      <span>or use a desktop/Laptop.</span>
+    </div>
+  </body>
+</html>
