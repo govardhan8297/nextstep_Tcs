@@ -105,6 +105,12 @@
         margin-left: 35px;
         font-size: 13px;
       }
+      .greet {
+        margin-left: 25px;
+        font-size: 11px;
+        font-weight: 500;
+        padding: 10px;
+      }
 
       .footer {
         width: 52%;
@@ -118,6 +124,31 @@
       }
       .footer a {
         text-decoration: none;
+      }
+      .dt-no {
+        font-size: 13px;
+        font-family: robotoRegular, Open Sans, Segoe UI, Sans-Serif;
+        font-weight: bold;
+        color: maroon;
+      }
+      .first-name {
+        font-size: 13px;
+        font-family: robotoRegular, Open Sans, Segoe UI, Sans-Serif;
+        font-weight: bold;
+        color: maroon;
+      }
+      .your {
+        font-size: 13px;
+        font-family: robotoRegular, Open Sans, Segoe UI, Sans-Serif;
+        font-weight: bold;
+        color: maroon;
+      }
+      .welcome {
+        font-size: 13px;
+        font-family: robotoRegular, Open Sans, Segoe UI, Sans-Serif;
+        font-weight: bold;
+        color: grey;
+        padding-left: 45px;
       }
       .offer-button button a {
         text-decoration: none;
@@ -211,15 +242,32 @@
           font-size: 11px;
         }
       }
-      @media screen and (min-width: 953px) and (max-width: 999px) {
+      @media screen and (min-width: 900px) and (max-width: 999px) {
         .list {
-          transform: translateX(195px);
+          transform: translateX(245px);
         }
+
         .para p:nth-child(1) {
           font-size: 11px;
         }
+        .greeting {
+          font-size: 9px;
+          transform: translateX(-20px);
+        }
         .container {
           width: 80%;
+        }
+        header img {
+          width: 100%;
+        }
+        button {
+          font-size: 8px;
+        }
+        .portal p {
+          font-size: 12px;
+        }
+        .list ul li {
+          font-size: 9px;
         }
         aside {
           width: 30%;
@@ -233,11 +281,99 @@
         }
 
         aside ul li {
+          font-size: 9px;
+        }
+      }
+      @media screen and (min-width: 800px) and (max-width: 899px) {
+        .list {
+          transform: translateX(200px);
+        }
+        .para p:nth-child(1) {
           font-size: 11px;
+        }
+        .greeting {
+          font-size: 9px;
+        }
+        header img {
+          width: 100%;
+        }
+        .container {
+          width: 80%;
+        }
+        .portal p {
+          font-size: 12px;
+        }
+        aside {
+          width: 30%;
+        }
+        .footer {
+          width: 80%;
+          transform: translateX(-0px);
+        }
+        button {
+          font-size: 8px;
+          padding: 0px;
+        }
+        .footer p {
+          font-size: 6px;
+        }
+        .list ul li {
+          font-size: 9px;
+        }
+        .greet {
+          font-size: 8px;
+        }
+
+        aside ul li {
+          font-size: 9px;
+        }
+      }
+      @media screen and (min-width: 753px) and (max-width: 799px) {
+        .list {
+          transform: translateX(175px);
+        }
+        .para p:nth-child(1) {
+          font-size: 11px;
+        }
+        .greeting {
+          font-size: 9px;
+        }
+        header img {
+          width: 100%;
+        }
+        .container {
+          width: 80%;
+        }
+        .portal p {
+          font-size: 9px;
+        }
+        aside {
+          width: 30%;
+        }
+        .footer {
+          width: 80%;
+          transform: translateX(-0px);
+        }
+        button {
+          font-size: 8px;
+          padding: 0px;
+        }
+        .footer p {
+          font-size: 6px;
+        }
+        .list ul li {
+          font-size: 9px;
+        }
+        .greet {
+          font-size: 8px;
+        }
+
+        aside ul li {
+          font-size: 8px;
         }
       }
 
-      @media screen and (max-width: 952px) {
+      @media screen and (max-width: 752px) {
         .container {
           display: none;
         }
@@ -303,44 +439,10 @@
         </aside>
         <div class="container-1">
           <section>
-            <span
-              style="
-                font-size: 13px;
-                font-family: robotoRegular, Open Sans, Segoe UI, Sans-Serif;
-                font-weight: bold;
-                color: grey;
-                padding-left: 45px;
-              "
-              >WELCOME</span
-            >
-            <span
-              style="
-                font-size: 13px;
-                font-family: robotoRegular, Open Sans, Segoe UI, Sans-Serif;
-                font-weight: bold;
-                color: maroon;
-              "
-              >YOUR</span
-            >
-            <span
-              style="
-                font-size: 13px;
-                font-family: robotoRegular, Open Sans, Segoe UI, Sans-Serif;
-                font-weight: bold;
-                color: maroon;
-              "
-              >NAME</span
-            >
-            <span
-              style="
-                font-size: 13px;
-                font-family: robotoRegular, Open Sans, Segoe UI, Sans-Serif;
-                font-weight: bold;
-                color: maroon;
-              "
-            >
-              (DT20207123456)</span
-            >
+            <span class="greeting welcome">WELCOME</span>
+            <span class="greeting your">YOUR</span>
+            <span class="greeting first-name">NAME</span>
+            <span class="greeting dt-no"> (DT20207123456)</span>
           </section>
           <nav>
             <div class="list">
@@ -365,14 +467,7 @@
             <p>Offer Letter</p>
           </section>
           <img src="nextstep_banner2.png" alt="image" />
-          <p
-            style="
-              margin-left: 25px;
-              font-size: 11px;
-              font-weight: 500;
-              padding: 10px;
-            "
-          >
+          <p class="greet">
             Thank you for accepting the offer letter. For queries you can write
             to us at <u>ilp.support@tcs.com</u>
           </p>
