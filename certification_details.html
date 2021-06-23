@@ -17,28 +17,364 @@
         box-sizing: border-box;
       }
       body {
-        background-image: -webkit-gradient(
-          linear,
-          50% 0%,
-          50% 100%,
-          color-stop(0%, #4d7a13),
-          color-stop(100%, #6aa025)
-        );
+        font-family: robotoRegular, Open Sans, Segoe UI, Sans-Serif;
+        background: url("HomePageWaterMark.jpg");
         background-attachment: fixed;
         background-repeat: no-repeat;
+      }
+      .container {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        min-height: 40vw;
+        padding: 0;
+        margin: auto;
+        background-color: white;
+        margin-top: -5px;
+      }
+      main {
+        width: 100%;
+      }
+      .container-1 section {
+        transform: translateX(-40px);
+      }
+      aside {
+        width: 20%;
+        height: 100%;
+        /* max-height: fit-content; */
+        background-color: #548ad4;
+        margin-top: 10px;
+      }
+
+      aside ul li {
+        list-style: none;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 15px;
+        font-size: 12px;
+        font-weight: 700;
         font-family: robotoRegular, Open Sans, Segoe UI, Sans-Serif;
+        border-bottom: 1px solid white;
+        cursor: pointer;
       }
-      .responsive {
-        display: block;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
+      aside ul li a {
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+      }
+      aside ul li:hover {
+        background-color: rgb(231, 196, 83);
+      }
+      section h4 {
+        padding-left: 50px;
+        font-size: 15px;
+      }
+
+      img[src="nextstep_banner2.png"] {
+        width: 98.7%;
+        margin-left: 15px;
+        height: 160px;
+      }
+      .details{
+          margin-left: 85px;
+          height: 400px;
+          overflow-y: scroll;
+          width:98%;
+      }
+      .head-line{
+        font-weight: 600;
+          font-size: 16px;
+          margin-left: 45px;
+      }
+      .para_details{
+          margin-top: 15px;
+          font-size: 13px;
+      }
+      .details p:nth-child(5){
+          font-weight:600
+      }
+
+      nav {
+        display: inline-flex;
+        width: 100%;
+        margin-top: 10px;
+        float: inline-end;
+        background-color: black;
+      }
+      nav ul {
+        display: flex;
+        transform: translateX(300px);
+      }
+
+      nav ul li {
+        padding: 8px;
         color: white;
+        list-style: none;
+        cursor: pointer;
+        font-size: 12px;
       }
-      .responsive span {
-        font-size: 25px;
+      .fa-phone {
+        transform: rotate(80deg);
       }
+      .portal {
+        width: 98.7%;
+        background-color: yellowgreen;
+        margin-left: 55px;
+        margin-top: 15px;
+
+        padding: 5px;
+      }
+      .portal p {
+        color: white;
+        font-weight: 600;
+        font-size: 14px;
+      }
+
+      .para {
+        margin-top: 5px;
+        margin-left: 35px;
+        font-size: 13px;
+      }
+
+      .footer {
+        /* position: fixed;
+        bottom: 0;
+        left: 370px; */
+        flex-shrink:0;
+        width: 62%;
+        margin: auto;
+        margin-top: 25px;
+        transform: translateX(17px);
+        padding-top: 30px;
+        border-top: 1px solid rgb(100, 100, 100);
+        font-size: 11px;
+        color: rgb(156, 156, 156);
+      }
+      .footer a {
+        text-decoration: none;
+      }
+      .offer-button button a {
+        text-decoration: none;
+      }
+      .your{
+        font-size: 13px;
+        font-family: robotoRegular, Open Sans, Segoe UI, Sans-Serif;
+        font-weight: bold;
+        color: maroon;
+      }
+
+      .welcome{
+        font-size: 13px;
+        font-family: robotoRegular, Open Sans, Segoe UI, Sans-Serif;
+        font-weight: bold;
+        color: grey;
+        padding-left: 45px;
+      }
+      .first-name{
+        font-size: 13px;
+        font-family: robotoRegular, Open Sans, Segoe UI, Sans-Serif;
+        font-weight: bold;
+        color: maroon;
+      }
+      .dt-no{
+        font-size: 13px;
+        font-family: robotoRegular, Open Sans, Segoe UI, Sans-Serif;
+        font-weight: bold;
+        color: maroon;
+      }
+
+      section ul{
+        margin-left: 40px;
+      }
+      section ul li span{
+        font-weight: 600;
+      }
+      section ul li{
+        margin-top: 10px;
+        font-size: 13px;
+        padding: 5px;
+      }
+      .btn{
+        display: flex;
+        margin: auto;
+        margin-top: 20px;
+        padding: 2px;
+        font-weight: 100;
+      }
+      .btn a{
+        text-decoration: none;
+        list-style: none;
+        color: #4c8de2;
+
+      }
+
+      .responsive {
+        display: none;
+      }
+      @media screen and (min-width: 952px) {
+        header img {
+          width: 100%;
+        }
+      }
+      @media screen and (min-width: 1900px) and (max-width: 2000px) {
+        .list {
+          transform: translateX(440px);
+        }
+        
+      }
+      @media screen and (min-width: 1800px) and (max-width: 1900px) {
+        .list {
+          transform: translateX(380px);
+        }
+        .details{
+          width: 95%;
+        }
+        .footer{
+          width: 60%;
+          transform: translateX(-0px);
+        }
+      }
+      @media screen and (min-width: 1700px) and (max-width: 1800px) {
+        .list {
+          transform: translateX(330px);
+        }
+        .details{
+          width: 95%;
+        }
+        .footer{
+          width: 60%;
+          transform: translateX(-0px);
+        }
+      }
+      @media screen and (min-width: 1600px) and (max-width: 1699px) {
+        .list {
+          transform: translateX(270px);
+        }
+        .details{
+          width: 95%;
+        }
+        .footer{
+          width: 60%;
+          transform: translateX(-0px);
+        }
+      }
+      @media screen and (min-width: 1500px) and (max-width: 1599px) {
+        .list {
+          transform: translateX(210px);
+        }
+        .details{
+          width: 95%;
+        }
+        .footer{
+          width:60%;
+          transform: translateX(-0px);
+        }
+      }
+      @media screen and (min-width: 1400px) and (max-width: 1499px) {
+        .list {
+          transform: translateX(150px);
+        }
+        .details{
+          width: 93%;
+        }
+        .footer{
+          width: 60%;
+          transform: translateX(-0px);
+        }
+        
+      }
+      @media screen and (min-width: 1300px) and (max-width: 1399px) {
+        .list {
+          transform: translateX(90px);
+        }
+       
+        .details{
+          width: 93%;
+        }
+        .footer{
+          width: 60%;
+          transform: translateX(-0px);
+        }
+      }
+      @media screen and (min-width: 1200px) and (max-width: 1299px) {
+        .list {
+          transform: translateX(30px);
+        }
+        .details{
+          width: 93%;
+        }
+        .footer{
+          width: 60%;
+          transform: translateX(-0px);
+        }
+      }
+      @media screen and (min-width: 1100px) and (max-width: 1199px) {
+        .list {
+          transform: translateX(-30px);
+        }
+        .details{
+          width: 90%;
+        }
+        .footer{
+          width: 60%;
+          transform: translateX(-0px);
+        }
+      }
+      @media screen and (min-width: 1000px) and (max-width: 1099px) {
+        .list {
+          transform: translateX(-90px);
+        }
+        .details{
+          width: 90%;
+        }
+        .footer{
+          width: 60%;
+          transform: translateX(-0px);
+        }
+      }
+      @media screen and (min-width: 953px) and (max-width: 999px) {
+        .list {
+          transform: translateX(-20px);
+        }
+        .details{
+          width: 90%;
+        }
+        .para_details{
+          font-size: 8px;
+        }
+        .greeting{
+          font-size: 7px;
+        }
+        .portal{
+          transform: translateX(-150px);
+        }
+        .footer{
+          width: 60%;
+          transform: translateX(-0px);
+        }
+        .details ul li{
+          font-size: 6px;
+        }
+        .head-line{
+          font-size: 8px;
+        }
+        .portal p{
+          font-size: 9px;
+        }
+        nav ul li{
+          font-size: 8px;
+        }
+        .btn {
+          font-size: 5px;
+        }
+        .footer p{
+font-size: 5px;
+        }
+      }
+
       @media screen and (max-width: 952px) {
+        .container {
+          display: none;
+        }
         body {
           background-image: -webkit-gradient(
             linear,
@@ -47,9 +383,6 @@
             color-stop(0%, #4d7a13),
             color-stop(100%, #6aa025)
           );
-          background-attachment: fixed;
-          background-repeat: no-repeat;
-          font-family: robotoRegular, Open Sans, Segoe UI, Sans-Serif;
         }
         .responsive {
           display: block;
@@ -58,17 +391,125 @@
           align-items: center;
           color: white;
         }
+        .footer {
+          display: none;
+        }
       }
     </style>
   </head>
   <body>
+    <div class="container">
+      <header>
+        <img src="nextstep_banner.png" alt="nextstep" />
+      </header>
+      <main>
+        <div class="container-1">
+          <section>
+            <span class="greeting welcome">WELCOME</span>
+            <span class="greeting your">YOUR</span>
+            <span class="greeting first-name">NAME</span>
+            <span class="greeting dt-no">(DT20207123456)</span>
+          </section>
+          <nav>
+            <div class="list">
+              <ul>
+                <li onclick="window.location='index.html'">
+                  <i class="fa fa-home" aria-hidden="true"></i> Home
+                </li>
+                <li><i class="fa fa-file" aria-hidden="true"></i> FAQ</li>
+                <li>
+                  <i class="fa fa-lock" aria-hidden="true"></i> Change Password
+                </li>
+                <li>
+                  <i class="fa fa-phone" aria-hidden="true"></i> Contact Us
+                </li>
+                <li>
+                  <i class="fa fa-sign-out" aria-hidden="true"></i> Logout
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <section class="portal">
+            <p>Certification Details</p>
+          </section>
+          <img src="nextstep_banner2.png" alt="image" />
+          <u class="head-line">Certification Tracker</u>
+          <section class="details">
+            
+            <p class="para_details">TCS encourages learning and empowers its people to learn and grow. We believe that continuous learning is the path for organisational and individual sustainability.
+            </p>
+            <p class="para_details">The Certification Tracker is one such step to tap your learning and help us align your aspirations with organisational needs. Completing relevant certifications will equip you to meet the expectations and challenges of the industry and help you have smooth journey from campus to corporate.
+            </p>
+            <p class="para_details">At TCSL, we believe that flexibility to work across technologies is imperative not only to meet our business requirements but also for the overall development of our employees. Exposure to diverse technologies during the initial phase will pave the way for a successful IT career ahead.
+            </p>
+            <p class="para_details ">While the organization would consider your preference for technology streams basis the acquired certifications and locations submitted by you, the final decision will reside with TCSL and will depend on the organization's need to service a business requirement.
+            </p>
+            <p class="para_details">The certification list is divided into following two categories:
+            </p>
+            <ul><li><span>Star Certifications -</span> TCS recognised and recommended Technical Certifications that are relevant for Initial Learning Program (ILP)</li>
+                <li><span>Ancillary Certifications - </span>Other additional certifications recognised by TCS</li>
+            </ul>
+            <p class="para_details">Please read the following instructions carefully to update your certification/s:
+            </p>
+            <ul>
+              <li>Completing one or more Star Certifications will give you an additional advantage in terms of being considered for an advanced level of Initial Learning Program (ILP) 
+                focused on technologies in which you may have achieved certifications and getting the technology stream of your choice.</li>
+                <li>Note: This is applicable only to technical category of candidates who are offered and yet to receive their joining letters.
+                </li>
+                <li>There exists a limited number of seats for each quarter (Apr-June, July-Sep, Oct-Dec, and Jan-Mar) for the number of star certified candidates 
+                  who will be considered for advanced level of ILP. Candidates will be selected purely on first come first serve basis, that is, as per the date of 
+                  submission of the certification details in NextStep.
+                </li>
+                <li>If your submission of the certification details exceeds the quarterly limit, we may carry it forward to the subsequent quarter subject to business 
+                  requirements of TCS.
+                </li>
+                <li>You can select certifications only from the drop down list provided. The date of certification should be as mentioned on the certificate/relevant 
+                  documents awarded to you.
+                </li>
+                <li>In case of submission of more than one star certification details, you are required to indicate your preference by selecting the appropriate denomination from the drop down provided (For e.g.: If you have completed Java and .net certification, you would be required to indicate your first/second preference in terms of technology).
+                </li>
+                <li>Request you to enter the details of acquired certifications only. You must possess valid proof of the certification and are required to upload the proof for each certification detail submitted. It is mandatory to carry the original certificate/relevant documents with you for verification at the time of joining.
+                </li>
+                <li>Once the certification details are submitted it cannot be edited or deleted. Check the details entered before submitting.
+                </li>
+                <li>You can continue to add to the list of acquired certifications till the time you join TCS.
+                </li>
+                <li>The list of Star Certifications will undergo review and modification from time to time to include certifications relevant to the business of TCS.
+                </li>
+                <li>Kindly note that certification expenses will not be reimbursed by TCS.
+                </li>
+                <li>Acquiring the recommended certifications is purely at your sole discretion depending on your area of interest and technical inclination. TCS neither has a tie up with any professional body offering certification courses nor mandates Universities/Institutes to conduct/facilitate such courses.
+                </li>
+                <li>Click on the below button to add/ update your certification details.
+                </li>
+            </ul>
+         </section>
+         <button type="button" class="btn"><a href="#">I have read the instructions and I accept</a></button>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <div class="footer">
+      <p>
+        2021 Tata Consultancy Services Limited. All rights reserved | Build
+        Number : | <a href="#">Privacy Notice</a> | <a href="#">Disclaimer</a> |
+        <a href="#">Terms Of Use</a>
+        <br />
+        We use cookies to give you the best possible experience on our
+        website.To find out more, read our updated <a href="#">Cookie Policy</a>
+      </p>
+    </div>
     <div class="responsive">
       <img src="responsive_banner.png" alt="image" />
-      <br /><br /><br />
-      <span
-        >This site is in Construction.<br /><br />
-        Please visit again...</span
-      >
+      <br />
+      <span>The page you are viewing is not compatible to mobile.</span>
+      <br /><br />
+      <span>
+        To access the page, please select the 'Desktop Site' in the browser menu
+      </span>
+      <br /><br />
+      <span>or use a desktop/Laptop.</span>
     </div>
   </body>
 </html>
