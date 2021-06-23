@@ -149,6 +149,31 @@
         padding-left: 25px;
         padding-right: 25px;
       }
+      .dt-no {
+        font-size: 13px;
+        font-family: robotoRegular, Open Sans, Segoe UI, Sans-Serif;
+        font-weight: bold;
+        color: maroon;
+      }
+      .first-name {
+        font-size: 13px;
+        font-family: robotoRegular, Open Sans, Segoe UI, Sans-Serif;
+        font-weight: bold;
+        color: maroon;
+      }
+      .your {
+        font-size: 13px;
+        font-family: robotoRegular, Open Sans, Segoe UI, Sans-Serif;
+        font-weight: bold;
+        color: maroon;
+      }
+      .welcome {
+        font-size: 13px;
+        font-family: robotoRegular, Open Sans, Segoe UI, Sans-Serif;
+        font-weight: bold;
+        color: grey;
+        padding-left: 45px;
+      }
 
       table .head {
         background: linear-gradient(to top, rgb(175, 206, 249), white);
@@ -304,22 +329,38 @@
           font-size: 11px;
         }
       }
-      @media screen and (min-width: 953px) and (max-width: 999px) {
+      @media screen and (min-width: 900px) and (max-width: 999px) {
         .list {
-          transform: translateX(200px);
+          transform: translateX(250px);
         }
         .para p:nth-child(1) {
           font-size: 11px;
         }
-        /* main {
-          margin-left: 5px;
-        } */
         aside {
           width: 30%;
+        }
+        table tbody .head td {
+          font-size: 12px;
+          padding: 2px;
+        }
+        header img {
+          width: 100%;
+        }
+        .greeting {
+          font-size: 9px;
+        }
+        .list ul li {
+          font-size: 9px;
         }
         .footer {
           width: 80%;
           transform: translateX(-0px);
+        }
+        .portal p {
+          font-size: 12px;
+        }
+        .portal1 p {
+          font-size: 11px;
         }
         .footer p {
           font-size: 5px;
@@ -331,7 +372,105 @@
           transform: translateX(55px);
         }
         aside ul li {
+          font-size: 9px;
+        }
+      }
+      @media screen and (min-width: 800px) and (max-width: 899px) {
+        .list {
+          transform: translateX(200px);
+        }
+        .para p:nth-child(1) {
           font-size: 11px;
+        }
+        aside {
+          width: 30%;
+        }
+        table tbody .head td {
+          font-size: 10px;
+          padding: 0px;
+        }
+        table tr td {
+          font-size: 9px;
+        }
+        header img {
+          width: 100%;
+        }
+        .greeting {
+          font-size: 9px;
+        }
+        .list ul li {
+          font-size: 9px;
+        }
+        .footer {
+          width: 80%;
+          transform: translateX(-0px);
+        }
+        .portal p {
+          font-size: 12px;
+        }
+        .portal1 p {
+          font-size: 11px;
+        }
+        .footer p {
+          font-size: 5px;
+        }
+        .container {
+          width: 80%;
+        }
+        table {
+          transform: translateX(55px);
+        }
+        aside ul li {
+          font-size: 9px;
+        }
+      }
+      @media screen and (min-width: 753px) and (max-width: 799px) {
+        .list {
+          transform: translateX(175px);
+        }
+        .para p:nth-child(1) {
+          font-size: 11px;
+        }
+        aside {
+          width: 30%;
+        }
+        table tbody .head td {
+          font-size: 9px;
+          padding: 2px;
+        }
+        table tr td {
+          font-size: 8px;
+        }
+        header img {
+          width: 100%;
+        }
+        .greeting {
+          font-size: 9px;
+        }
+        .list ul li {
+          font-size: 9px;
+        }
+        .footer {
+          width: 80%;
+          transform: translateX(-0px);
+        }
+        .portal p {
+          font-size: 12px;
+        }
+        .portal1 p {
+          font-size: 11px;
+        }
+        .footer p {
+          font-size: 5px;
+        }
+        .container {
+          width: 80%;
+        }
+        table {
+          transform: translateX(55px);
+        }
+        aside ul li {
+          font-size: 9px;
         }
       }
 
@@ -401,44 +540,10 @@
         </aside>
         <div class="container-1">
           <section>
-            <span
-              style="
-                font-size: 13px;
-                font-family: robotoRegular, Open Sans, Segoe UI, Sans-Serif;
-                font-weight: bold;
-                color: grey;
-                padding-left: 45px;
-              "
-              >WELCOME</span
-            >
-            <span
-              style="
-                font-size: 13px;
-                font-family: robotoRegular, Open Sans, Segoe UI, Sans-Serif;
-                font-weight: bold;
-                color: maroon;
-              "
-              >YOUR</span
-            >
-            <span
-              style="
-                font-size: 13px;
-                font-family: robotoRegular, Open Sans, Segoe UI, Sans-Serif;
-                font-weight: bold;
-                color: maroon;
-              "
-              >NAME</span
-            >
-            <span
-              style="
-                font-size: 13px;
-                font-family: robotoRegular, Open Sans, Segoe UI, Sans-Serif;
-                font-weight: bold;
-                color: maroon;
-              "
-            >
-              (DT20207123456)</span
-            >
+            <span class="greeting welcome">WELCOME</span>
+            <span class="greeting your">YOUR</span>
+            <span class="greeting first-name">NAME</span>
+            <span class="greeting dt-no"> (DT20207123456)</span>
           </section>
           <nav>
             <div class="list">
